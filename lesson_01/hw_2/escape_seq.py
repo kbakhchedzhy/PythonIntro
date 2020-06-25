@@ -5,4 +5,4 @@ print('Escape seguence\n\
 \\t\tHorizontal tab\n\
 \\\\ \tBackslash \\ \n\
 \\\"\tDouble quotation mark \"\n\
-\\\'\t Single quotation mark\'')
+\\\'\tSingle quotation mark\'')
