@@ -10,4 +10,4 @@ for el in range(len(lst)-k-1):
 lst.pop()
 # lst = lst[:k] + lst[k+1:10]
 # lst.remove(lst[k])
-print(lst)
+print('Новый список: \n', lst)
