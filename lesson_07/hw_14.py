@@ -1,4 +1,4 @@
-from random import  randint
+from random import randint
 
 length = 10
 lst1 = [randint(1, 100) for _ in range(length)]
