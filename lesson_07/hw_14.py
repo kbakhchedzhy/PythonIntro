@@ -9,7 +9,7 @@ lst3 = []
 print(lst1, '\n', lst2)
 j = 0
 for i in range(len(lst1)):
-    while j != length:
+    while j != len(lst2):
         if lst1[i] < lst2[j]:
             lst3.append(lst1[i])
             break
@@ -25,8 +25,8 @@ for i in range(len(lst1)):
             continue
     else:
         lst3.append(lst1[i])
-if i == length - 1:
-    while j != length:
+if i == len(lst1)-1:
+    while j != len(lst2):
         lst3.append(lst2[j])
         j += 1
 
