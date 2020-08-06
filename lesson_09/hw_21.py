@@ -7,4 +7,4 @@ def square(a):
     return t
 
 a = int(input('Введите сторону квадрата: '))
-print(square(a))
+print('Периметр, площадь и диагональ квадрата: ', square(a))
