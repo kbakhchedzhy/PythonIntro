@@ -12,7 +12,7 @@ def arithmetic(a, b, op):
 a = int(input('Введите первое число: '))
 b = int(input('Введите второе число: '))
 op = input('Введите операцию над ними: ')
-if op == ('+' or '-' or '*' or '/'):
+if op == '+' or '-' or '*' or '/':
     c = arithmetic(a, b, op)
     print(c)
 else:
