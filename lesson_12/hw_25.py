@@ -1,31 +1,31 @@
 from random import randint
 
 
-def myprint(array):
-    for line in array:
+def myprint(lst):
+    for line in lst:
         for x in line:
             print('{:^4}'.format(x), end=' ')
         print()
 
 
-def bubble_sort(array):
+def bubble_sort(lst):
     for k in range(m): #счетчик
         for j in range(m - 1 - k): #символ
-            if array[-1][j] > array[-1][j+1]:
-                array[-1][j], array[-1][j+1] = array[-1][j+1], array[-1][j]
+            if lst[-1][j] > lst[-1][j+1]:
+                lst[-1][j], lst[-1][j+1] = lst[-1][j+1], lst[-1][j]
                 for i in range(m):
-                    array[i][j], array[i][j + 1] = array[i][j + 1], array[i][j]
+                    lst[i][j], lst[i][j + 1] = lst[i][j + 1], lst[i][j]
     for k in range(m):
         for j in range(m):
             if j % 2:
                 for i in range (m - 1 - k):
-                    if array[i][j] > array[i + 1][j]:
-                        array[i][j], array[i + 1][j] = array[i + 1][j], array[i][j]
+                    if lst[i][j] > lst[i + 1][j]:
+                        lst[i][j], lst[i + 1][j] = lst[i + 1][j], lst[i][j]
             else:
                 for i in range(m - 1 - k):
-                    if array[i][j] < array[i + 1][j]:
-                        array[i][j], array[i + 1][j] = array[i + 1][j], array[i][j]
-    return array
+                    if lst[i][j] < lst[i + 1][j]:
+                        lst[i][j], lst[i + 1][j] = lst[i + 1][j], lst[i][j]
+    return lst
 
 
 m = int(input('Введите размер сетки: '))
